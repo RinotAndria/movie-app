@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Cloner le dépôt') {
             steps {
-                git 'https://github.com/RinotAndria/movie-app.git'
+                git branch: 'main', url: 'https://github.com/RinotAndria/movie-app.git'
             }
         }
 
